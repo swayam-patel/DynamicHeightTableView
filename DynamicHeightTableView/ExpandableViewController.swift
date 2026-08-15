@@ -130,7 +130,5 @@ class ExpandableViewController: UIViewController, UITableViewDataSource, UITable
             tableView.reloadRows(at: [indexPath], with: .automatic)
             tableView.endUpdates()
         }
-        
-        print("Expanded Index Paths:", expandedIndexPaths)
     }
 }

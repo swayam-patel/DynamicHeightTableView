@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,17 +17,29 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XDp-gZ-pDN">
-                        <rect key="frame" x="16" y="8" width="288" height="77"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="XDp-gZ-pDN">
+                        <rect key="frame" x="16" y="16" width="288" height="61"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SL5-vD-IdQ">
-                                <rect key="frame" x="0.0" y="0.0" width="288" height="48.666666666666664"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58K-p1-AjC">
-                                <rect key="frame" x="0.0" y="56.666666666666679" width="288" height="20.333333333333336"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0z-Js-qf2">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="SL5-vD-IdQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="268" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="swE-MU-1dm">
+                                        <rect key="frame" x="268" y="5.3333333333333321" width="20" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Xeb-2p-GXZ"/>
+                                            <constraint firstAttribute="width" constant="20" id="lOX-7L-oDc"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58K-p1-AjC">
+                                <rect key="frame" x="0.0" y="49" width="288" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,14 +48,15 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="XDp-gZ-pDN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="264-pC-mWN"/>
-                    <constraint firstItem="XDp-gZ-pDN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="jEr-Ug-SC3"/>
-                    <constraint firstAttribute="bottom" secondItem="XDp-gZ-pDN" secondAttribute="bottom" constant="8" id="kRK-Vd-Hbc"/>
-                    <constraint firstAttribute="trailing" secondItem="XDp-gZ-pDN" secondAttribute="trailing" constant="16" id="n1T-Vy-JfL"/>
+                    <constraint firstAttribute="trailing" secondItem="XDp-gZ-pDN" secondAttribute="trailing" constant="16" id="IQq-jQ-nmk"/>
+                    <constraint firstItem="XDp-gZ-pDN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="XeH-kQ-mPk"/>
+                    <constraint firstItem="XDp-gZ-pDN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="y05-rO-fKS"/>
+                    <constraint firstAttribute="bottom" secondItem="XDp-gZ-pDN" secondAttribute="bottom" constant="16" id="ySb-jb-Fqm"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="chevronImageView" destination="swE-MU-1dm" id="ugg-F2-gGF"/>
                 <outlet property="contentLabel" destination="58K-p1-AjC" id="vVO-ON-QoQ"/>
                 <outlet property="contentStack" destination="XDp-gZ-pDN" id="lV7-LH-opS"/>
                 <outlet property="titleLabel" destination="SL5-vD-IdQ" id="CEF-hC-JKU"/>
@@ -50,4 +64,7 @@
             <point key="canvasLocation" x="129.7709923664122" y="5.9859154929577469"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="70"/>
+    </resources>
 </document>
